@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("./img/yash.jpeg");
+            background-size: cover;
+
+            }
+          .sun{                                                  /*   sun  */
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 100px;
+                 background-color: rgb(0, 0, 0);
+                     background-image: url("img/sun2.png");
+                     background-size: cover;  
+                     margin:260px auto; 
+                     top: 100px;
+                     position: relative;
+            }
+
+                                                                    /*  panet 1 murcury  */
+            .mucury{
+                width: 50px;
+                 height: 50px;
+                 border-radius: 50px;
+                 background-color: rgb(0, 0, 0);
+                 background-image: url("img/mercuriol3.png");
+                 background-size: cover;  
+                          margin: auto;
+                 left: 230px;
+                 right: 10px;
+               top:  300px;
+               bottom: 250px;
+               position: absolute;
+               animation-name: murcuryanimation;
+               animation-duration: 7.5s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+               transform-origin: -100px;
+
+            }
+            @keyframes  murcuryanimation
+            {
+               to{     transform: rotateZ(0deg);         }
+               from{      transform: rotatez(360deg);                               } 
+            }
+            .vinus{                                          /*  panet 1 vinus  */
+                 width: 70px;
+                 height: 70px;
+                 border-radius: 70px;
+                background-color: rgb(0, 0, 0);
+                background-image: url(img/venus2.png);
+                  background-size: cover; 
+                  margin: auto;
+                  left: 450px;
+                 right: 10px;
+               top:  300px;
+               bottom: 260px;
+               position: absolute;
+               animation-name: vinus;
+                animation-duration: 8s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+               transform-origin: -200px;
+
+            }
+            @keyframes vinus
+             {
+               to{     transform: rotateZ(0deg);         }
+               from{      transform: rotatez(360deg);                               } 
+            }
+            .earth{                                               /*  panet 1 earth  */
+
+                        width: 75px;
+                       height: 75px;
+                     border-radius: 75px;
+                    background-color: rgb(28, 28, 210);
+                    background-image: url(img/earth3.jpg);
+                      background-size: cover;
+                      margin: auto;
+                  left: 720px;
+                 right: 10px;
+               top:  300px;
+               bottom: 280px;
+               position: absolute;
+               animation-name: earth;
+                animation-duration: 8.5s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+               transform-origin: -350px;            
+
+            }
+            @keyframes earth
+             {
+               to{     transform: rotateZ(0deg);         }
+               from{      transform: rotatez(360deg);                               } 
+             }
+
+             .moon{                                               /*  panet 1 moon */
+
+                               width: 25px;
+                              height: 25px;
+                         border-radius: 25px;
+                         background-color: beige;
+                             background-size: cover;
+                             margin: auto;
+                        left: 90px;
+                       right: 10px;
+                       top:  40px;
+                      bottom: 280px;
+                                  position: absolute;
+                                  animation-name: moon;
+                animation-duration: 3s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+               transform-origin: -50px;            
+             }
+             @keyframes moon
+             {
+               0%{     transform: rotateZ(0deg);         }
+               100%{      transform: rotatez(360deg);                               } 
+             }
+             .planet{
+                                                           /*planet new*/
+                             width: 65px;
+                              height: 65px;
+                         border-radius: 65px;
+                         
+                         background-image: url(img/png.png);
+                             background-size: cover;
+                             margin: auto;
+                  left: 1010px;
+                 right: 10px;
+               top:  290px;
+               bottom: 280px;
+               position: absolute;
+               animation-name: planet;
+                animation-duration: 9s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+               transform-origin: -500px;
+                          
+             }
+             @keyframes planet
+             {
+               to{     transform: rotateZ(0deg);         }
+               from{      transform: rotatez(360deg);                               } 
+             }
+
+                 .common{
+                  animation-play-state: running;
+                 }
+
+        
+    </style>
+</head>
+<body>
+    
+                  <div class="sun common">   </div>
+                  <div class="mucury common">   </div>
+                  <div class="vinus common">   </div>
+                  <div class="earth common"> 
+                     <div class="moon common">   </div> 
+                     </div>
+                     <div class="planet common">  </div>
+                  
+
+</body>
+</html>
